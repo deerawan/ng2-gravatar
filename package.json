@@ -1,0 +1,17 @@
+{
+  "name": "ng2-gravatar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Budi Irawan <deerawan@gmail.com> (http://budiirawan.com)",
+  "license": "ISC",
+  "dependencies": {
+    "angular2": "^2.0.0-beta.1"
+  },
+  "devDependencies": {
+    "typescript": "^1.7.5"
+  }
+}
