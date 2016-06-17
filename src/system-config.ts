@@ -3,6 +3,7 @@
  **********************************************************************************************/
 /** Map relative paths to URLs. */
 const map: any = {
+  'ts-md5': 'vendor/ts-md5'
 };
 
 /** User packages configuration. */
@@ -45,7 +46,8 @@ System.config({
   map: {
     '@angular': 'vendor/@angular',
     'rxjs': 'vendor/rxjs',
-    'main': 'main.js'
+    'main': 'main.js',
+    'ts-md5': 'vendor/ts-md5'
   },
   packages: cliSystemConfigPackages
 });

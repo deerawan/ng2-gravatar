@@ -1,10 +1,10 @@
 import { bootstrap } from '@angular/platform-browser-dynamic';
 import { enableProdMode } from '@angular/core';
-import { Ng2GravatarAppComponent, environment } from './app/';
+import { GravatarComponent, environment } from './app/';
 
 if (environment.production) {
   enableProdMode();
 }
 
-bootstrap(Ng2GravatarAppComponent);
+bootstrap(GravatarComponent);
 
