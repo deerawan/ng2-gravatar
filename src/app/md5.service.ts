@@ -1,9 +1,10 @@
-import {Md5} from 'ts-md5/dist/md5';
 
+/// <reference path="../../typings/requirejs/require.d.ts" />
+var md5 = require('md5');
 
 export class Md5Service {
   encrypt(text: string) {
-    return Md5.hashStr(text);
+    return md5(text);
 
     // var md5cycle = function (x, k) {
     //   var a = x[0],

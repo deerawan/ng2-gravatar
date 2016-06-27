@@ -3,11 +3,14 @@
  **********************************************************************************************/
 /** Map relative paths to URLs. */
 const map: any = {
-  'ts-md5': 'vendor/ts-md5'
+  'md5': 'vendor/blueimp-md5/js/md5.min.js'
 };
 
 /** User packages configuration. */
 const packages: any = {
+  'md5': {
+    format: 'cjs'
+  }
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -47,7 +50,6 @@ System.config({
     '@angular': 'vendor/@angular',
     'rxjs': 'vendor/rxjs',
     'main': 'main.js',
-    'ts-md5': 'vendor/ts-md5'
   },
   packages: cliSystemConfigPackages
 });
