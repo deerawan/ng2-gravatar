@@ -12,20 +12,12 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-  <gravatar [email]="deerawan@gmail.com" [ssl]="gila">Loading...</gravatar>
-
-
-
-    {{#each scripts.polyfills}}<script src="{{.}}"></script>{{/each}}
-    <script>
-      System.import('system-config.js').then(function () {
-        System.import('main');
-      }).catch(console.error.bind(console));
-    </script>
-
-
-
-
-
+  <gravatar-demo>Loading...</gravatar-demo>
+  {{#each scripts.polyfills}}<script src="{{.}}"></script>{{/each}}
+  <script>
+    System.import('system-config.js').then(function () {
+      System.import('main');
+    }).catch(console.error.bind(console));
+  </script>
 </body>
 </html>

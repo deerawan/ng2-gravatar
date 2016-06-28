@@ -3,44 +3,45 @@ import { Md5Service } from './md5.service';
 
 @Component({
   selector: 'gravatar',
-  template: '<img src="{{ url }}" />'
+  template: `<img src="{{ url }}" />`
 })
 export class GravatarComponent implements OnInit {
-  @Input() email:string;
-  @Input() size:number;
-  @Input() default:string;
-  @Input() forceDefault:string;
-  @Input() rating:string;
-  @Input() ssl:boolean;
+  @Input() email: string;
+  // @Input() size:number;
+  // @Input() default:string;
+  // @Input() forceDefault:string;
+  // @Input() rating:string;
+  // @Input() ssl:boolean;
 
   url: string;
-
-  constructor() {};
 
   ngOnInit() {
     // this.url = 'http://www.gravatar.com/avatar/71a6523c5915c0ee79a79a137c1b2be0';
     this.url = 'http://gravatar.com';
     let parameters = '';
 
-    if (this.ssl) {
-      this.url = 'https://secure.gravatar.com';
-    }
+    console.log(this.email);
 
-    if (this.size) {
-      parameters += 'size=' + this.size;
-    }
 
-    if (this.default) {
-      parameters += '&default=' + this.default;
-    }
+    // if (this.ssl) {
+    //   this.url = 'https://secure.gravatar.com';
+    // }
 
-    if (this.forceDefault) {
-      parameters += '&forcedefault=' + this.forceDefault;
-    }
+    // if (this.size) {
+    //   parameters += 'size=' + this.size;
+    // }
 
-    if (this.rating) {
-      parameters += '&rating=' + this.rating;
-    }
+    // if (this.default) {
+    //   parameters += '&default=' + this.default;
+    // }
+
+    // if (this.forceDefault) {
+    //   parameters += '&forcedefault=' + this.forceDefault;
+    // }
+
+    // if (this.rating) {
+    //   parameters += '&rating=' + this.rating;
+    // }
 
 
     let md5 = new Md5Service();
