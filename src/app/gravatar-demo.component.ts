@@ -6,7 +6,7 @@ import 'rxjs/Rx'; // load the full rxjs
 @Component({
   moduleId: module.id,
   selector: 'gravatar-demo',
-  template: `<gravatar email="deerawan@gmail.com"></gravatar>`,
+  templateUrl: 'gravatar-demo.component.html',
   providers: [
     HTTP_PROVIDERS,
   ],
